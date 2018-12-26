@@ -4,8 +4,8 @@
 #include<iomanip>
 using namespace std;
 
-void generet(int mas[20],int *e);
-void zam(int mas[20],int *e);
+void generet(int mas[200000000],int *e);
+void zam(int mas[200000000],int *e);
 
 int main()
 {
@@ -15,7 +15,7 @@ int main()
     if (n>=1&&n<=200000000)
     {
         int e=2;
-        int *mas = new int [20];
+        int *mas = new int [200000000];
         mas[0]=0;
         mas[1]=1;
         int i=3;
@@ -33,7 +33,7 @@ int main()
     return 0;
 }
 
-void generet(int mas[20],int *e)
+void generet(int mas[200000000],int *e)
 {
     int i;
     for(i=*e;i<*e*2;i++)
@@ -44,7 +44,7 @@ void generet(int mas[20],int *e)
     *e=i;
     return;
 }
-void zam(int mas[20],int *e)
+void zam(int mas[200000000],int *e)
 {
     int i;
     for(i=*e/2;i<*e;i++)
